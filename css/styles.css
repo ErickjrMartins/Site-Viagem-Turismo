@@ -1,0 +1,381 @@
+* {
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+
+}
+
+button {
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    border: 0;
+    background-color: rgb(224, 224, 65);
+    font-family: 'Oswald', sans-serif;
+
+
+}
+
+button:hover {
+    background-color: aliceblue;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    margin: auto 100px;
+
+
+
+
+}
+
+header nav p {
+    font-weight: bold;
+
+
+
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+
+}
+
+header ul li {
+    margin: 0 30px;
+}
+
+header {
+    height: calc(80vh - 50px);
+    background: no-repeat center/100% url('https://img.freepik.com/fotos-premium/bela-vista-do-pequeno-vilarejo-de-hallstatt-situado-nas-margens-do-lago-hallstatt-na-austria_36036-1581.jpg?w=2000');
+    text-align: center;
+}
+
+.header-content {
+    max-width: 450px;
+    margin: 100px auto;
+
+}
+
+.header-content h1 {
+    margin-bottom: 35px;
+    padding: 90px 0 0 0;
+    font-size: 4rem;
+
+}
+
+.title-2 {
+    color: white;
+}
+
+.pacotes {
+    background: #e7f7ff;
+    padding: 12px;
+
+}
+
+.pacotes .pacotes-title {
+    width: 100%;
+    text-align: center;
+    margin: 25px 0;
+}
+
+.pacotes .pacote-cards {
+    display: flex;
+    max-width: 950px;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pacotes .card {
+    width: 230px;
+    height: 340px;
+    background: rgb(246, 237, 237);
+    border-radius: 24px 0px;
+    margin: 25px 25px;
+    position: relative;
+}
+
+.pacotes .card-image {
+    width: 230px;
+    height: 200px;
+    border-radius: 24px 0 0;
+}
+
+.pacotes .card-content {
+    padding: 0 15px;
+
+}
+
+.pacotes .card-content ul {
+    flex-direction: column;
+    list-style: none;
+    padding-left: 0px;
+
+}
+
+.pacotes .card-content li {
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+    color: rgb(94, 95, 96);
+
+}
+
+.pacotes .card-content li svg {
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+}
+
+.pacotes .card-content h1 {
+    font-size: 1rem;
+}
+
+.pacotes .card .card-tag-top {
+    font-size: 15px;
+    font-weight: bold;
+    color: aliceblue;
+    right: 0;
+    top: 15px;
+    background: orange;
+    position: absolute;
+    padding: 5px 10px;
+    border-radius: 15px 0 0 15px;
+
+}
+
+.pacotes .card .card-tag-top p {
+    margin: 2px;
+}
+
+.pacotes .card .card-tag-bottom {
+    position: absolute;
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(5, 19, 223);
+    left: 0;
+    bottom: 168px;
+    background: rgb(224, 224, 65);
+    padding: 5px 10px;
+    border-radius: 0 15px 15px 0;
+}
+
+.pacotes .card .card-tag-bottom p {
+    margin: 2px;
+}
+
+/*section serviços*/
+
+.servicos {
+    padding: 15px;
+
+}
+
+.servicos .servicos-cards {
+    display: flex;
+    max-width: 950px;
+    justify-content: center;
+    margin: auto;
+    flex-wrap: wrap;
+
+
+
+}
+
+.servicos .servicos-title {
+    text-align: center;
+    margin: 25px 0 60px 0;
+
+}
+
+.servicos .card {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px
+}
+
+.servicos .card svg {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 50px;
+    transition: all;
+    /* muda a cor do hover lentamente*/
+    margin-top: 50px;
+}
+
+.servicos .card svg:hover {
+    stroke: green;
+    transform: scale(1.1);
+    /* aumenta o objeto hover quando passa o mouse*/
+}
+
+.servicos .card h3 {
+    font-weight: bold;
+}
+
+.servicos .card p {
+    color: grey;
+    font-size: .8rem;
+    text-align: center;
+}
+
+.servicos .card .card-content {
+    text-align: center;
+}
+
+.servicos button {
+    background: rgb(224, 224, 65);
+}
+
+.servicos button:hover {
+    background: rgb(5, 200, 235);
+    border-radius: 180px 0 180px 0px;
+}
+
+.contato {
+    padding: 20px 180px;
+    background: grey;
+    position: relative;
+
+}
+
+.contato .contato-card {
+    width: 280px;
+    height: 220px;
+    background: rgb(246, 237, 237);
+    border-radius: 25px 0 25px 0;
+    position: absolute;
+
+
+    top: calc(50% - 125px);
+    left: calc(25% - 210px);
+
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 5px 5px 3px 2px rgba(0, 0, 0, 0.2);
+
+}
+
+.contato .contato-card ul {
+    list-style: none;
+    padding-left: 20px;
+    margin-bottom: 30px;
+    margin: 0;
+}
+
+h1 {
+    margin-bottom: 0;
+
+}
+
+.contato .contato-card li {
+    font-size: .8rem;
+    font-weight: bold;
+    color: grey;
+
+    display: flex;
+    align-items: center;
+
+}
+
+.contato .contato-card li svg {
+    width: 16px;
+    margin: 13px;
+}
+
+
+
+/* RESPONSIVIDADE*/
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+    header nav p {
+        margin: auto;
+    }
+
+    /* Landscape phones and down */
+    @media (max-width: 480px) {
+
+        body {
+            margin-bottom: 55px;
+        }
+
+        header nav ul {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+
+
+            z-index: 100;
+
+            background: blue;
+            color: white;
+            font-weight: bold;
+
+            height: 55px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        header nav li {
+            margin: auto;
+        }
+
+        .header-content h1 {
+            font-size: 55px;
+        }
+
+        header nav p {
+            width: 100%;
+            text-align: center;
+            margin: 30px;
+        }
+
+        .contato {
+            padding: 60px 0;
+
+        }
+
+        .contato .contato-card {
+            position: static;
+            margin: 20px auto;
+
+
+        }
+    }
+
+}
+
+
+
+/* Portrait tablet to landscape and desktop 
+@media (min-width: 768px) and (max-width: 979px) { ... }
+
+/* Large desktop 
+@media (min-width: 1200px) { ... }*/
